@@ -334,6 +334,11 @@ nav {
   background-color: red;
 }
 
+.button--small {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
 /* End Home Section */
 
 /* About Section */
@@ -440,8 +445,35 @@ nav {
   line-height: 1.7;
   font-weight: 400;
   text-align: center;
+}
+
+.dev-sub-1 {
   position: relative;
-  transition: left 1s ease, opacity 2s ease;
+  transition: left .5s ease-in, opacity 2s ease;
+  left: 0;
+}
+
+.dev-sub-2 {
+  position: relative;
+  transition: left .75s ease-in, opacity 2s ease;
+  left: 0;
+}
+
+.dev-sub-3 {
+  position: relative;
+  transition: left 1s ease-in, opacity 2s ease;
+  left: 0;
+}
+
+.dev-sub-4 {
+  position: relative;
+  transition: left 1.25s ease-in, opacity 2s ease;
+  left: 0;
+}
+
+.dev-sub-5 {
+  position: relative;
+  transition: left 1.5s ease-in, opacity 2s ease;
   left: 0;
 }
 
@@ -449,35 +481,148 @@ nav {
   line-height: 1.7;
   font-weight: 400;
   text-align: center;
-  position: relative;
-  transition: all 1s ease, opacity 2s ease;
-  bottom: 0;
+}
 
+.des-sub-1 {
+  position: relative;
+  transition: all .5s ease-in, opacity 2s ease;
+  bottom: 0;
+}
+
+.des-sub-2 {
+  position: relative;
+  transition: all .75s ease-in, opacity 2s ease;
+  bottom: 0;
+}
+
+.des-sub-3 {
+  position: relative;
+  transition: all 1s ease-in, opacity 2s ease;
+  bottom: 0;
+}
+
+.des-sub-4 {
+  position: relative;
+  transition: all 1.25s ease-in, opacity 2s ease;
+  bottom: 0;
+}
+
+.des-sub-5 {
+  position: relative;
+  transition: all 1.5s ease-in, opacity 2s ease;
+  bottom: 0;
 }
 
 .team__content {
   line-height: 1.7;
   font-weight: 400;
   text-align: center;
+}
+
+.team-sub-1 {
   position: relative;
-  transition: all 1s ease, opacity 2s ease;
+  transition: all .5s ease-in, opacity 2s ease;
+  right: 0;
+}
+
+.team-sub-2 {
+  position: relative;
+  transition: all .75s ease-in, opacity 2s ease;
+  right: 0;
+}
+
+.team-sub-3 {
+  position: relative;
+  transition: all 1s ease-in, opacity 2s ease;
+  right: 0;
+}
+
+.team-sub-4 {
+  position: relative;
+  transition: all 1.25s ease-in, opacity 2s ease;
+  right: 0;
+}
+
+.team-sub-5 {
+  position: relative;
+  transition: all 1.5s ease-in, opacity 2s ease;
   right: 0;
 }
 
 /* Skills Transitions */
 
-.transition-from-left {
-  left: -35%;
+.transition-from-left1 {
+  left: -65%;
   opacity: 0;
 }
 
-.transition-from-right {
-  right: -35%;
+.transition-from-left2 {
+  left: -95%;
   opacity: 0;
 }
 
-.transition-from-bottom {
-  bottom: -150px;
+.transition-from-left3 {
+  left: -125%;
+  opacity: 0;
+}
+
+.transition-from-left4 {
+  left: -155%;
+  opacity: 0;
+}
+
+.transition-from-left5 {
+  left: -185%;
+  opacity: 0;
+}
+
+.transition-from-bottom1 {
+  bottom: -65px;
+  opacity: 0;
+}
+
+.transition-from-bottom2 {
+  bottom: -95px;
+  opacity: 0;
+}
+
+.transition-from-bottom3 {
+  bottom: -125px;
+  opacity: 0;
+}
+
+.transition-from-bottom4 {
+  bottom: -155px;
+  opacity: 0;
+}
+
+.transition-from-bottom5 {
+  bottom: -185px;
+  opacity: 0;
+}
+
+.transition-from-right1 {
+  right: -65%;
+  opacity: 0;
+}
+
+.transition-from-right2 {
+  right: -95%;
+  opacity: 0;
+}
+
+.transition-from-right3 {
+  right: -125%;
+  opacity: 0;
+}
+
+.transition-from-right4 {
+  right: -155%;
+  opacity: 0;
+}
+
+.transition-from-right5 {
+  right: -185%;
   opacity: 0;
 }
 
@@ -527,13 +672,42 @@ nav {
 
 .first-site {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   width: 50%;
   min-width: 250px;
+
 }
 
-.first-site img {
+.first-site-img {
+  opacity: 1;
+  display: block;
   width: 100%;
   height: 100%;
+  transition: .5s ease;
+
+}
+
+.first-site-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.first-site:hover .first-site-img {
+  opacity: 0.3;
+}
+
+.first-site:hover .first-site-middle {
+  opacity: 1;
 }
 
 .first-portfolio {
@@ -543,6 +717,7 @@ nav {
 }
 
 .first-portfolio img {
+  margin-top: 2px;
   width: 100%;
   height: 100%;
 }
